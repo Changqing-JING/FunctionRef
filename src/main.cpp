@@ -6,7 +6,7 @@ int main() {
   C1 c1;
   int x = 10;
   int y = 20;
-  auto fx = [x](int m) {
+  auto const fx = [x](int m) {
     int sum = m + x;
     printf("foo %d\n", sum);
   };
@@ -16,8 +16,8 @@ int main() {
     printf("foo %d\n", sum);
   };
 
-  FunctionRef<void(int)> rfx(fx);
-  FunctionRef<void(int)> ryx(yx);
+  vb::FunctionRef<void(int)> rfx(fx);
+  vb::FunctionRef<void(int)> ryx(yx);
 
   c1.foo(rfx);
   c1.foo(ryx);

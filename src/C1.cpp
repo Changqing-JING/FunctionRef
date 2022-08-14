@@ -1,3 +1,3 @@
 #include "C1.hpp"
 
-void C1::foo(FunctionRef<void(int)> &callback) { callback(5); }
+void C1::foo(vb::FunctionRef<void(int)> &callback) { callback(5); }

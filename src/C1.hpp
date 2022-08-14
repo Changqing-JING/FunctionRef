@@ -3,9 +3,9 @@
 
 #include "FunctionRef.hpp"
 
-class C1{
+class C1 {
 public:
-    void foo(FunctionRef<void(int)>& callback);
+  void foo(vb::FunctionRef<void(int)> &callback);
 };
 
 #endif
